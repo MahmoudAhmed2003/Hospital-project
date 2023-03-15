@@ -1,0 +1,20 @@
+
+create database Hospital
+use Hospital
+create table doctor(
+d_ssn int primary key not null,
+f_name varchar(20),
+l_name varchar(20),
+Specilization varchar(15))
+create table patient(ssn int primary key,
+f_name varchar(20),
+l_name varchar(20),
+date_of_checked_out varchar (max),
+medical_insurance varchar(70),
+date_addmitted varchar(max))
+create table test (
+test_id int primary key,
+name varchar (max) not null,
+t_date varchar(max),
+t_time varchar(max),
+result varchar (max))
